@@ -1,7 +1,7 @@
 import React from 'react';
-import { BpkCode } from 'bpk-component-code';
 import BpkButton from 'bpk-component-button';
 import BpkText from 'bpk-component-text';
+import BpkCalendar from '@skyscanner/backpack-web/bpk-component-calendar';
 
 import STYLES from './App.scss';
 
@@ -11,14 +11,12 @@ const App = () => (
   <div className={c('App')}>
     <header className={c('App__header')}>
       <div className={c('App__header-inner')}>
-        <BpkText tagName="h1" textStyle="xxl" className={c('App__heading')}>Welcome to React + Backpack</BpkText>
+        <BpkText tagName="h1" textStyle="xxl" className={c('App__heading')}>Flight Schedule</BpkText>
       </div>
     </header>
     <main className={c('App__main')}>
-      <BpkText tagName="p" className={c('App__text')}>
-        To get started, edit <BpkCode>src/App.jsx</BpkCode> and save to reload.
-      </BpkText>
-      <BpkButton onClick={() => alert('It works!')}>Click me</BpkButton>
+      {/* <BpkCalendar /> */}
+      <BpkButton onClick={() => alert("It runs!")}>Continue</BpkButton>
     </main>
   </div>
 );
